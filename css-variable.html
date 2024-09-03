@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variable</title>
+    <style>
+        :root{
+            --primary-color: cyan;
+            --secondary-color:lightgreen;
+            --primary-font-size:20px;
+            --primary-background:rgb(19, 10, 10);
+        }
+        .box>h1{
+            font-size: var(--primary-font-size);
+            color:var(--primary-color);
+        }
+        .box>p{
+            color: var(--secondary-color);
+        }
+        .box{
+            background-color: var(--primary-background);
+        }
+        #grid{
+            display: grid;
+            gap: 50px;
+            grid-template-columns: 200px calc(100% - 200px - 50px);
+            
+        }
+        .box2{
+            background-color: var(--secondary-color);
+            border: 1px solid black;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>box and boxes</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At, saepe officiis maxime vero necessitatibus blanditiis consequatur in vel laboriosam officia?</p>
+    </div>
+    <div class="box">
+        <h1>box and boxes</h1>
+        <p>Culpa veniam in, ducimus id exercitationem nobis veritatis accusantium voluptate illo! Dignissimos cum voluptatem cumque totam, cupiditate repellat eaque est?</p>
+    </div>
+    <div class="box">
+        <h1>box and boxes</h1>
+        <p>Laborum iusto voluptatibus praesentium eius doloribus! Repudiandae iusto nisi animi quam assumenda perspiciatis sequi cum accusantium dolorem ipsam, vero harum.</p>
+    </div>
+    <div class="box">
+        <h1>box and boxes</h1>
+        <p>Tempora ipsum excepturi rerum mollitia, sit odio commodi aut a doloremque consequuntur accusantium cumque suscipit, temporibus vitae iure ullam at?</p>
+    </div>
+    <div class="box">
+        <h1>box and boxes</h1>
+        <p>Provident quam natus dolor, fugiat vero quod, illo ex, soluta suscipit esse harum? Aut ullam dolore repudiandae, natus molestias explicabo.</p>
+    </div>
+    <div id="grid">
+        <div class="box2">bad man</div>
+        <div class="box2">bat man</div>
+    </div>
+</body>
+</html>
