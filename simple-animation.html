@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <style>
+        *{
+            margin: 0px;
+        }
+        body{
+            padding: 100px;
+            border: 1px solid red;
+            
+        }
+        .bat{
+            background-color: darkgreen;
+            width: 30px;
+            height: 200px;
+            transform: rotate(45deg);
+            transform-origin: top right;
+            margin-left: 100px;
+            transition: transform .1s;
+            border-bottom-left-radius: 80%;
+            
+        }
+        body:hover{
+            .bat{
+                transform: rotate(-45deg);
+                transform-origin: top right;
+            }
+            .ball{
+                transform: translate(2000px,-2000px);
+            }
+        }
+        .ball{
+            background-color: red;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            position:relative;
+            bottom: 80px;
+            left:263px;
+            transition: transform 5s ease-out .2s;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="bat"></div>
+    <div class="ball"></div>
+  </body>
+</html>
